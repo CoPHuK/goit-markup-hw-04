@@ -29,7 +29,14 @@ body p {
   margin-top: 10px;
 }
 .hiden {
-  visibility: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 header {
   padding-top: 24px;
@@ -105,6 +112,17 @@ header .container {
 .contact .link {
   padding: 10px 0px;
 }
+.item-icons.phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+.item-icons.mail {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
 header .container {
   justify-content: space-between;
 }
@@ -124,11 +142,29 @@ header .container {
 }
 /* HEro */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  max-width: 1600px;
+  height: 600px;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 80%),
+      rgba(47, 48, 58, 80%)
+    ),
+    url(../img/Hero.jpg);
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: var(--hero-bcg);
 }
+
 .hero-tittle {
   margin: 0px;
+  margin-bottom: 30px;
   color: var(--bcg-color);
   font-weight: 900;
   font-size: 44px;
@@ -164,6 +200,21 @@ header .container {
 .skills .skills-list {
   display: flex;
 }
+
+.container-skills-icons {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--wl-button-color);
+}
+.skills-icons {
+  width: 70px;
+  height: 70px;
+}
+
 .skills-item h3 {
   padding-top: 30px;
   color: var(--title-text-color);
