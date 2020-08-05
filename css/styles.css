@@ -110,8 +110,14 @@ header .container {
   margin-left: 30px;
 }
 .contact .link {
+  vertical-align: middle;
   padding: 10px 0px;
 }
+.contact .link:hover {
+  --color2: var(--accent-color);
+  --color4: var(--accent-color);
+}
+
 .item-icons.phone {
   width: 10px;
   height: 15px;
@@ -278,12 +284,38 @@ header .container {
 .staff-container {
   text-align: center;
   background-color: var(--bcg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .list .staff-networks {
   display: flex;
   justify-content: space-between;
   padding: 16px 24px 32px 32px;
 }
+.icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+}
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--accent-color);
+  --color3: white;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: #afb1b8;
+}
+.icon:hover,
+.icon:focus {
+  fill: white;
+}
+
 /* Постоянные клиенты */
 .clients {
   padding-top: 94px;
@@ -300,9 +332,57 @@ header .container {
 .client-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.icon-clients.first {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.icon-clients.second {
+  width: 40px;
+  height: 52px;
+}
+
+.icon-clients.third {
+  width: 41px;
+  height: 42.6px;
+}
+
+.icon-clients.fourth {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.icon-clients.fifth {
+  width: 59px;
+  height: 47px;
+}
+
+.icon-clients.sixth {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+.client-icon-container {
+  display: flex;
+  height: 90px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.client-icon-container:hover {
+  border: 1px solid var(--accent-color);
+  --color3: var(--accent-color);
+}
+svg {
+  box-sizing: border-box;
+}
 footer {
   padding: 60px 0px;
   background-color: var(--hero-bcg);
+  --color3: white;
 }
 footer .container {
   display: flex;
@@ -317,6 +397,14 @@ footer .container {
 .networks li:not(:last-child) {
   margin-right: 10px;
 }
+
+.footer-icons-item a {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-icons-item .icon-link:hover {
+  background-color: var(--accent-color);
+}
+
 footer a {
   color: var(--accent-color);
 }
@@ -390,6 +478,9 @@ footer span {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .pf-container:nth-child(3n) {
   margin-right: 0px;
