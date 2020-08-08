@@ -389,6 +389,12 @@ footer .container {
   justify-content: space-between;
   align-items: center;
 }
+.footer-container .logo {
+  color: var(--bcg-color);
+}
+.footer-container .logo:hover {
+  color: var(--accent-color);
+}
 .footer-container .networks {
   display: flex;
   margin-top: 20px;
@@ -422,7 +428,20 @@ footer span {
   display: inline-block;
   margin-top: 20px;
 }
-
+.link-footer.link {
+  display: block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.link-footer.link:hover {
+  color: var(--accent-color);
+}
 .worklist-button {
   padding: 6px 22px;
   background-color: var(--wl-button-color);
@@ -444,6 +463,10 @@ footer span {
 }
 
 /* ПОРТФОРЛИО  */
+.Project-pf {
+  padding-top: 93px;
+  border-top: 1px solid #ececec;
+}
 .pf-button-list {
   display: flex;
   justify-content: center;
